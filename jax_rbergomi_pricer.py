@@ -1,6 +1,6 @@
 import jax.numpy as jnp
 from jax import jit, vmap, lax, Array, debug
-import src.core.forecasting.rough_bergomi.jax_rbergomi as jrb
+import jax_rbergomi as jrb
 
 @jit
 def rbergomi_pricer_base_jit(key, H, eta, rho, xi, tau_option, k):
